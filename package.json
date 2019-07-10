@@ -1,0 +1,31 @@
+{
+  "name": "node-jwt-authentication",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/brigicsap/node-jwt-authentication.git",
+  "author": "Brigi Csap <brigi.csap@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "dotenv": "^8.0.0",
+    "es6-promisify": "^5.0.0",
+    "express": "~4.16.1",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.3",
+    "mongoose-mongodb-errors": "^0.0.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pug": "2.0.0-beta11",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
