@@ -13,8 +13,7 @@ router.get('/register', userController.registerForm)
 
 router.post('/register',
   userController.validateRegister,
-  userController.register,
-  authController.login
+  userController.register
 )
 
 router.post('/login', authController.login)

@@ -21,6 +21,6 @@ exports.login = (req, res, next) => {
         maxAge: 1000 * 60 * 60 * 24 // 1 day
       })
       .status(200)
-      .json({user, token})
+      .render('index', { title: `Welcome ${user.name}`})
   })(req, res)
 }

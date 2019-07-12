@@ -13,7 +13,6 @@ mongoose.connection.on('error', error => {
 require('./models/User')
 
 const app = require('./app')
-const port = process.env.PORT || 7777
 app.set('port', port)
 
 const server = app.listen(app.get('port'), () => {

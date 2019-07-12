@@ -24,9 +24,7 @@ module.exports = passport => {
       //if email already taken, return error
       if (user) return done(null, false, { message: 'ooops email taken '})
       //encrypt password before saving to db
-      const hash = await bcrypt.hash(password, 10, (err, res) => {
-        console.log({err, res})
-      })
+      const hash = await bcrypt.hash(password, 10)
       //save user in db
       User
         .create({
